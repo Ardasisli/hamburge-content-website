@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+     
+    html {
+      height: 2000px;
+    }
+    * {
+      
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+    .imge {
+      width: 100%;
+      height: 100vh;
+      background:linear-gradient(rgba(0, 0, 0, 1), rgba(100, 99, 99, 0.5)) ,
+      url(https://furman.top/uploads/posts/2022-06/thumbs/1654607699_49-furman-top-p-burger-art-krasivo-oboi-57.png);
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+    .header {
+      z-index: 15;
+      position: fixed;
+      width: 100%;
+      height: 60px;
+    }
+    .header nav {
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(to bottom, #ccffff 1%, #669999 100%);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 32px;
+    }
+    .header nav ul {
+      margin: 0px;
+      padding: 0;
+      list-style-type: none;
+      display: flex;
+    }
+    .header nav ul li {
+      margin-left: 40px;
+    }
+    .header nav ul li a {
+      color: white;
+      text-decoration: none;
+      line-height: 60px;
+      font-size: 19px;
+      font-family: 'Courier New', Courier, monospace;
+    }
+    .logo {
+      color: white;
+      font-size: 27px;
+      text-decoration: none;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    
+    main{
+      width: 100%;
+      background: linear-gradient(to bottom, #b1b0b0 1%, #ffffff 100%);
+
+    }
+    .container{
+      background-color: transparent;
+      width: 1200px;
+      padding: 20px;
+      margin: auto;
+
+    }
+    .row{
+      padding: 20px;
+      margin-bottom: 40px;
+      margin: auto;
+
+    }
+    .row::after{
+      content: "";
+      display: block;
+      clear: both;
+    }
+    .col-3{
+      width: calc(33% - 20px);
+      margin-left: 20px;
+      float: left;
+      text-align: center;
+      background-color: white;
+      box-shadow: 0px 0px 10px black;      
+      border-radius: 20px;
+      overflow: hidden;
+      transition: all 0.3s ease-in-out;
+    }
+    .col-3:hover{
+      box-shadow: 0px 0px 20px white;
+
+    }
+    .col-3 img{
+      padding: 0px;
+      width: 100%;
+      transition: transform 0.3s ease;
+      cursor: pointer;
+    }
+
+    #overlay {
+      z-index: 14;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5); /* Yarı saydam arka plan */
+      display: none; /* Başlangıçta görünmez */
+      justify-content: center;
+      align-items: center;
+    }
+
+    #overlay img {
+      max-width: 80%; /* Resmi %80 oranında büyüt */
+      max-height: 80%; /* Resmi %80 oranında büyüt */
+      cursor: zoom-out; /* Küçültme işareti */
+    }
+
+    .col-3 p ,h2{
+      padding: 10px;
+      line-height: 120%;
+
+    }
+    .col-3 p{
+      line-height: 150%;
+      text-align: center;
+      font-size: 18px;
+      font-weight: 500;
+    }
+    .col-3 h2{
+      text-align: center;
+      font-size: 30px;
+      font-weight: 500;
+    }
+
+    /* burası hamburger açılış kısmı  */
+    .icerik{
+      position: relative;
+      width: 100%;
+      height: 900px;
+      background-color: transparent;
+      z-index: 10;
+    }
+    .col-2{
+      text-align: center;
+      width: 50%;
+      float: left;
+    }
+    .col-2 img{
+      position: relative;
+      top: 200px;
+    }
+    .col-2 img::after{
+      content: "";
+      display: block;
+      clear: both;
+    }
+    .col2__yazi{
+      text-align: left;
+      position: relative;
+      top: 200px;
+    }
+  
+    .col2__yazi h2{
+      border-bottom: 2px solid gold;
+      width: 600px;
+      color: yellow;
+      display: inline-block;
+      padding: 10px;
+      display: block;
+      font-size: 50px;
+      margin-bottom: 40px;
+      
+
+    }
+    .col2__yazi h2:hover{
+
+      animation: border2 0.4s  alternate-reverse ease-in-out ;
+    }
+    .col2__yazi p{
+      color: white;
+      text-align: justify;
+      width: 600px;
+      font-size: 22px;
+      line-height: 150%;
+    }
+    
+  
+
+    </style>
+  </head>
+  <body>
+
+    <div class="kapsa">
+      <div class="header">
+        <nav>
+          <a href="" class="logo">logo</a>
+          <ul>
+            <li><a href="#">Anasayfa</a></li>
+            <li><a href="#">Hakkımda</a></li>
+            <li><a href="#">İletişim</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="imge">
+       
+        <div class="icerik">
+          <div class="col-2">
+            <img src="png-transparent-hamburger-with-vegetables-hamburger-slider-hamburger-burger-food-recipe-cheeseburger-removebg-preview.png" alt="">
+          </div>
+          <div class="col-2">
+            <div class="col2__yazi">
+              <h2>Lezzetin Zirvesi: Sıcak, Taze, Efsanevi!</h2>
+              <p>
+                "Her ısırıkta gerçek lezzeti keşfetmeye hazır olun! Taptaze malzemelerle hazırlanan hamburgerlerimiz, damak tadınıza unutulmaz bir deneyim sunmak için özenle pişiriliyor. Sıcak, doyurucu ve benzersiz tatlar sizi bekliyor. Şimdi sipariş verin ve lezzetin zirvesine ulaşın!
+              </p>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+      <main>
+        <div class="container">
+          <div class="row">
+            <div class="col-3">
+              <img class="enlargeable" src="https://i.ytimg.com/vi/oauI4frFkCg/maxresdefault.jpg" alt="">
+
+              <h2> Classic Cheeseburger.</h2>
+              <p>Klasik bir hamburger köftesi, üzerine eritilmiş peynir, marulları, domates dilimleri ve soğanla servis edilir. Genellikle ketçap ve mayonezle tatlandırılır.
+              </p>
+            </div>
+
+            <div class="col-3">
+              <img class="enlargeable" src="https://avatars.mds.yandex.net/get-mpic/1592349/img_id4837645873897441172.jpeg/orig" alt="">
+              <div id="overlay"></div>
+
+              <h2>Bacon Burger</h2>
+              <p>Bu hamburger, çıtır bacon dilimleriyle zenginleştirilmiş klasik köfte ve peynir içerir. Genellikle marullarla birlikte servis edilir ve tatlı bir sos veya barbekü sosu eklenir.
+              </p>
+            </div>
+
+            <div class="col-3">
+              <img class="enlargeable" src="https://i.ytimg.com/vi/vPOqmUWA0Iw/maxresdefault.jpg" alt="">
+              <div id="overlay"></div>
+
+              <h2> Mushroom Swiss Burger</h2>
+              <p>Üzerinde sotelenmiş mantar dilimleri ve Swiss peyniri bulunan bu hamburger, mantar severler için ideal bir seçenektir. Genellikle soğan ve çeşitli baharatlarla tatlandırılır.
+              </p>
+            </div>
+          </div>
+          
+          <div class="row">
+            <div class="col-3">
+              <img class="enlargeable" src="https://i.ytimg.com/vi/-jHk9geBFgM/maxresdefault.jpg" alt="">
+              <div id="overlay"></div>
+
+              <h2>BBQ Burger</h2>
+              <p>Barbekü sosuyla tatlandırılmış köfte ve cheddar peyniri ile yapılan bu hamburger, genellikle turşu dilimleri ve kızarmış soğanla birlikte servis edilir. Barbekü sosu tatlı ve baharatlı bir lezzet sağlar.</p>
+            </div>
+
+            <div class="col-3">
+              <img class="enlargeable" src="https://static.tildacdn.com/tild3535-6631-4433-b166-633138326366/photo_2023-09-18_12-.jpg" alt="">
+              <div id="overlay"></div>
+
+              <h2>Veggie Burger</h2>
+              <p>Et yerine sebze veya baklagillerden yapılan köftelerle hazırlanan bu hamburger, genellikle avokado, marul, domates ve çeşitli sebzelerle servis edilir. Vejetaryenler için mükemmel bir alternatiftir</p>
+            </div>
+
+            <div class="col-3">
+              <img class="enlargeable" src="https://i.ytimg.com/vi/0tsDgSZb2uE/maxresdefault.jpg" alt="">
+              <div id="overlay"></div>
+
+              <h2>Spicy Jalapeño Burger</h2>
+              <p>Acı sevenler için ideal bir seçenek olan bu hamburger, dilimlenmiş jalapeño biberleri ve acı sosla tatlandırılmış köfte içerir. Üzerine cheddar peyniri ve baharatlı bir sos eklenir.</p>
+            </div>
+          </div>
+
+        </div>
+
+        <script>
+
+        const images = document.querySelectorAll('.enlargeable');
+        const overlay = document.getElementById('overlay');
+        const enlargedImg = document.createElement('img');
+        overlay.appendChild(enlargedImg);
+
+        images.forEach(img => {
+          img.addEventListener('dblclick', () => {
+            enlargedImg.src = img.src; // Tıklanan resmin kaynağını büyük resme ayarla
+            overlay.style.display = 'flex'; // Overlay'i göster
+          });
+        });
+
+        overlay.addEventListener('click', () => {
+          overlay.style.display = 'none'; // Overlay'i gizle
+        });
+
+
+
+        </script>
+
+      </main>
+    </div>
+  </body>
+  
+</html>
