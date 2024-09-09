@@ -133,6 +133,7 @@
 
     }
     .col-3 p{
+      width: 100%;
       line-height: 150%;
       text-align: center;
       font-size: 18px;
@@ -189,6 +190,8 @@
       animation: border2 0.4s  alternate-reverse ease-in-out ;
     }
     .col2__yazi p{
+      position: relative;
+      right: 165px;
       color: white;
       text-align: justify;
       width: 600px;
@@ -261,7 +264,7 @@
     .boxV2 h1 ,p{
       margin: auto;
       display: block;
-      width: 100;
+      width: 100px;
       text-align: left;
       padding: 20px;
       width: 1100px;
@@ -277,9 +280,75 @@
       color: white;
       font-size: 20px;
     }
+    .bosluk::after{
+      content: "";
+      height: 12px;
+      margin-top: 150px;
+      display: block;
+      margin-bottom: 150px;
+    }
+    .parcacik4{
+      width: 100%;
+      height: 500px;
+      background-color: #ffc680;
+
+    }
+    .boxpar{
+      width: 70%;
+      height: 100%;
+      margin: auto;
+      background-color: transparent;
+    }
+    .boxpar p{
+      width: 400px;
+    }
+    .col-4{
+      width: calc(50% - 10px);
+      margin-top: 10px;
+      padding: 20px;
+      margin-left: 10px;
+      float: left;
+      text-align: center;
+      background-color: white;
+    }
+    .col-4 span{
+      font-size: 40px;
+      padding: 5px;
+      color: #fff;
+      margin: auto;
+      
+      
+    }
+    .col-4 .col-4__sol{
+      position: relative;
+      top: 25px;
+      float: left;
+      margin-left: 30px;
+      width: calc(16% - 40px);
+      height: 55px;
+      background-color: orange;
+      border-radius: 50%;
+
+    }
+    .col-4 .col-4__sag{
+      padding: 20px;
+      margin-left:20px ;
+      float: left;
+      width: calc(80% - 20px);
+      height: 100%;
+      background-color: transparent;
+    }
+    .col-4 .col-4__sag p{
+      width: 470px;
+      color: black;
+      font-size: 19px;
+      line-height: 110%;
+      text-align: left;
+    }
   
 
     </style>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
   </head>
   <body>
 
@@ -394,9 +463,61 @@
               </p>
             </div>
           </div>
+        </div>    
+
+        <div class="parcacik4">
+          <div class="boxpar">
+            <div class="row">
+              <div class="col-4">
+                <div class="col-4__sol">
+                    <span class="material-symbols-outlined">star_rate</span>
+                </div>
+
+                <div class="col-4__sag">
+                  <h3>Üretimin Her Aşaması</h3>
+                  <p>Her aşamada taze malzemeler ve titizlikle hazırlanmış tarifler kullanıyoruz. Üretim sürecimizi sürekli iyileştirerek en iyi sonucu sunmayı hedefliyoruz.</p>
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="col-4__sol">
+                  <span class="material-symbols-outlined">swap_horiz</span>
+                </div>
+
+                <div class="col-4__sag">
+                  <h3>Geri Bildirim ve Tartışmalar</h3>
+                  <p>Müşteri geri bildirimlerine büyük önem veriyoruz. İyileştirmeleri tartışarak en iyi hizmeti sağlamak için sürekli çalışıyoruz.</p>
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="col-4__sol">
+                  <span class="material-symbols-outlined">add_task</span>
+                </div>
+
+                <div class="col-4__sag">
+                  <h3>Yaratıcı Tarif Geliştirme</h3>
+                  <p>Farklı ve özgün tatlar yaratmak için tariflerimizi sürekli güncelliyoruz. Her yeni tarifte daha fazla lezzet keşfetmenizi amaçlıyoruz.</p>
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="col-4__sol">
+                  <span class="material-symbols-outlined">stacks</span>
+                </div>
+
+                <div class="col-4__sag">
+                  <h3>Mükemmel Sunum</h3>
+                  <p>Hamburgerlerimizi estetik bir sunumla hazırlıyoruz. Görsellik ve lezzet bir arada olmalı, bu yüzden her sunumu en iyi şekilde tasarlıyoruz.</p>
+                </div>
+              </div>
+
+
+
+
+            </div>
+          </div>
         </div>
+        <div class="bosluk"></div>
 
-
+        
 
 
 
