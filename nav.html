@@ -283,7 +283,7 @@
     .bosluk::after{
       content: "";
       height: 12px;
-      margin-top: 150px;
+      margin-top: 100px;
       display: block;
       margin-bottom: 150px;
     }
@@ -345,6 +345,68 @@
       line-height: 110%;
       text-align: left;
     }
+    .iletsim{
+      position: relative;
+      top: 100px;
+      background-color:transparent;
+      height: 400px;
+      width: 70%;
+      margin: auto;      
+    }
+   
+    form{
+      border-radius: 20px;
+      border: 2px solid gray;
+      margin: auto;
+      background-color: rgb(42, 216, 135);
+      width: 550px;
+      height: 500px;
+      padding: 0px;
+      box-shadow: 50px 50px 0px rgb(178, 230, 35);
+      margin: auto;
+    }
+    form input{
+
+      padding: 5px;
+      width: 50px;
+      display: inline-block;
+      width: 100%;
+      margin: 10px;
+    }
+    form  textarea{
+      padding: 5px;
+      width: 200px;
+      display: inline-block;
+      width: 100%;
+      margin: 10px;
+    }
+    form input , label , textarea {
+      font-size: 16px;
+      font-family: Arial, Helvetica, sans-serif;
+      top: 50px;
+      position: relative;
+      left: 13%;
+      margin-left: 0px;
+      margin: 5px;
+    }
+    #submit{
+      background-color: #FF8f0a;
+      color: black;
+      width: 200px;
+      margin: auto;
+      text-align: center;
+      display: inline-block;
+      margin-left: 10px;
+      border: 2px solid #ffc680;
+      transition: all 0.4s ease-in-out;
+    }
+    #submit:hover{
+      background-color: #ffc680;
+      color: white;
+      border: 2px solid #FF8f0a;
+
+    }
+    
   
 
     </style>
@@ -515,6 +577,44 @@
             </div>
           </div>
         </div>
+
+        <div class="iletsim">
+            <div class="row">
+              <form action="kayit.php" method="post">
+                <table>
+                  <tr>
+                   <td>
+                    <label for="ad_soyad">Adınız ve soyadınız</label>
+                    <input type="text" id="ad_soyad" placeholder="isminizi ve soyadınızı giriniz">
+                   </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <label for="Email">Email</label>
+                      <input type="text" id="Email" placeholder="Mail giriniz">
+                     </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <label for="area">Bize Mesaj gönderin</label>
+                      <textarea name="" id="area" cols="30" rows="10" placeholder="Bize mesaj gönderin"></textarea>
+                     </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      
+                      <input id="submit" type="submit" value="Gönder">
+                    </td>
+                  </tr>
+                </table>
+              
+              </form>
+            </div>
+        </div>
+        
+        <div class="bosluk"></div>
+        <div class="bosluk"></div>
+        <div class="bosluk"></div>
         <div class="bosluk"></div>
 
         
